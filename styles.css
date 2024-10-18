@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4c69ff, #8660ff);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.registration-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 500px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.column {
+    width: 48%;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Gender section modification */
+.gender-section {
+    margin-bottom: 10px; /* Reduced margin to decrease space below */
+}
+
+.gender-options {
+    display: flex;
+    gap: 10px; /* Adds space between the gender options */
+    margin-bottom: 5px; /* Added margin to decrease space between options and buttons */
+}
+
+.gender-label {
+    display: block; /* Ensures the Gender label is on a separate line */
+    margin-bottom: 5px;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cancel-btn {
+    background-color: #ff5959;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background-color: #e54747;
+}
+
+.submit-btn {
+    background-color: #6a4cff;
+    color: white;
+}
+
+.submit-btn:hover {
+    background-color: #5339d6;
+}
+
+/* Adjust buttons alignment and spacing */
+.row:last-child {
+    display: flex;
+    justify-content: flex-start; /* Aligns buttons to the left */
+    gap: 10px; /* Adds gap between Cancel and Submit buttons */
+    margin-top: 10px; /* Reduced margin to decrease space above buttons */
+}
